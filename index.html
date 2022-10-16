@@ -11,11 +11,9 @@
 <body>
     <p>Money:  </p>
     <p id="money"></p>
-    <button onclick="beg(); paidUpgrade();">beg</button>
+    <button onclick="beg(); init();">beg</button>
     <button onclick="upgradeBegging(); disabled=true;">Get a cute dog to sit with you</button>
-    <button id="paidUpgrade">Expensive Upgrade</button>
+    <button id="paidUpgrade" onclick="paidUpgrade(); disabled=true;">Expensive Upgrade</button>
     
 </body>
 </html>
-
-document.getElementById("money").innerHTML = gold;
