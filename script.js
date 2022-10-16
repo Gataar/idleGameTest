@@ -5,15 +5,7 @@ let goldSecond = 0;
 let upgrade1 = document.getElementById("paidUpgrade");
 
 document.getElementById("money").innerHTML = gold;
-if (gold>5){
-      
-        upgrade1.style.display = "block";
-    
-    }
-    else{
-        upgrade1.style.display = "none";
-      
-    }
+
 
 
  
@@ -23,9 +15,9 @@ if (gold>5){
 
 
 function beg(){
-    document.getElementById("money").innerHTML = gold;
+    
     gold = gold + begValue;
-    console.log(gold);
+    document.getElementById("money").innerHTML = gold;
   return;
     
 }
@@ -41,11 +33,22 @@ function sleepBegging(){
 function paidUpgrade(){
   
   
+  
   //upgrade1.style.display = "none";
-  //begValue = begValue * 2;
-  //gold = gold - 20;
+  begValue = begValue * 2;
+  gold = gold - 20;
     
    
   
     
+}
+
+function init(){
+  if (gold>5){
+      
+        upgrade1.style.display = "block";
+    
+    }
+    
+  
 }
